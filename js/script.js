@@ -1,3 +1,12 @@
+function capture() {
+  event.preventDefault();
+  var emailAddress = document.customerEmail.email.value;
+  if(emailAddress == ""){
+    console.log("Enter a valid Email and resubmit please");
+  }
+  else{ console.log("Thank you for signing up for our mailing list, " + emailAddress + "!");}
+}
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -48,4 +57,3 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-
