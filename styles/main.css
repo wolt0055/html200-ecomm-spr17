@@ -11,7 +11,14 @@ p {
 
 /* TODO: size images manually so this is not necessary */
 img {
-  max-height: 20rem;
+  max-width: 100%;
+
+  /*max-height: 20rem;*/
+}
+
+.col-md-4 {
+  padding: 1rem;
+
 }
 
 /***************** NAV *****************/
@@ -25,10 +32,10 @@ nav {
 
 /**************** HERO *****************/
 
-header img {
+/*header img {
   max-height: 6rem;
 
-}
+}*/
 
 header {
   width: 100%;
@@ -106,7 +113,8 @@ li {
 }
 
 li:last-child {
-  text-align: right;
+  /*text-align: right;*/
+  text-align: center;
 
 }
 li a {
