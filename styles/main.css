@@ -117,9 +117,31 @@ li {
 li:last-child {
   /*text-align: right;*/
   text-align: center;
-  
+
 
 }
 li a {
   color: white;
+}
+@media (max-width: 410px) {
+  body { color: red; }
+}
+
+@media (min-width: 411px) and (max-width: 700px) {
+  body { color: purple; }
+  img { border: 2px solid purple;}
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  body { color: blue;
+         font-style: italic;}
+}
+
+@media (min-width: 1101px) {
+  body { color: green;
+         /*font-size: 150%;*/
+       }
+  h1 { text-decoration: underline;}
+  h2 { text-decoration: underline;
+       font-size: 4rem;}
 }
