@@ -21,6 +21,11 @@ img {
 
 }
 
+.addremove{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /***************** NAV *****************/
 
 nav a:hover {
@@ -90,9 +95,6 @@ container {
   margin: 0%;
 }
 
-container1 {
-  display: flex;
-}
 item-container {
   display:flex;
   flex-direction: row;
@@ -115,6 +117,7 @@ li {
 li:last-child {
   /*text-align: right;*/
   text-align: center;
+  
 
 }
 li a {
