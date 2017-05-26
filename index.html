@@ -4,6 +4,7 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -20,21 +21,26 @@
         <li class="col-lg-3 col-sm-3"><a href="#">Hats</a></li>
         <li class="col-lg-3 col-sm-3"><a href="#">Gloves</a></li>
         <li class="col-lg-3 col-sm-3"><a href="#">Scarves</a></li>
-        <li class="cart-info col-lg-3 col-sm-3"><a href="#" class= "fa fa-shopping-cart" aria-hidden="true"></a></li>
+        <li class="cart-info"><a href="#" class="fa fa-shopping-cart" aria-hidden="true" onclick="cartStatus()"></a><span id="cartCount"> 0</span></li>
           <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </li> -->
       </ul>
     </nav>
     <div class="container">
       <div class="row">
-        <img class="col-sm-1"
-        src="images/logo-scarfcat-90w.png"
-        alt="dapper cartoon cat wearing a scarf">
-        <h1 class="col-sm-3">
-          <span class="logo-w">W</span>inter
-          <span class="logo-w">W</span>ear
-          <span class="logo-w">W</span>arehouse
-        </h1>
+        <div class="col-sm-2">
+          <img
+          src="images/logo-scarfcat-90w.png"
+          alt="dapper cartoon cat wearing a scarf">
+        </div>
+        <div class="col-sm-4">
+          <h1>
+            <span class="logo-w">W</span>inter
+            <span class="logo-w">W</span>ear
+            <span class="logo-w">W</span>arehouse
+          </h1>
+        </div>
+
       </div>
 
     </div>
@@ -79,7 +85,7 @@
               <input type="button" name="removeFromCart" value="-" onclick="removeFromCart('item001');">
             </div>
 
-          
+
 
         </div>
 
